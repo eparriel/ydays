@@ -1,36 +1,8 @@
+@import "general.css";
+
 * {
   margin: 0;
   padding: 0;
-}
-
-.frise {
-  position: fixed;
-  height: 100vh;
-  max-height: 100vh;
-  width: 100%;
-  opacity: 0.2;
-  z-index: -1;
-  background-image: url("assets/fresque_rvb_couleur_repeat.svg");
-  background-size: 2500px 375px;
-  top: 0;
-  left: 0;
-}
-
-.shadow {
-  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
-}
-
-.connexionArea {
-  min-height: 550px;
-  min-width: 350px;
-  width: 95%;
-  height: 70vh;
-  margin: 20vh auto;
-  background-color:#f7f7f7;
-  display: flex;
-  flex: 1 2;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .logo {
@@ -39,11 +11,28 @@
   height: 112px;
 }
 
+.logo img {
+  margin: 12px;
+}
+
+.connexionArea {
+  min-height: 550px;
+  min-width: 350px;
+  width: 70%;
+  height: 70vh;
+  margin: 50px auto;
+  background-color:#f7f7f7;
+  display: flex;
+  flex: 1 2;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .formConnexion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 95%;
+  width: 33%;
   margin: auto;
   height: 70%;
 }
@@ -79,4 +68,18 @@
   width: 95%;
   height: 52px;
   color: white;
+  cursor: pointer;
 }
+
+@media screen and (max-width: 730px) {
+  .formConnexion {
+    width: 95%;
+  }
+
+  .connexionArea {
+    width: 95%;
+  }
+
+}
+
+

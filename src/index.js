@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import {HomePageYnov} from './pages/home_page_ynov';
+// import {Connexion} from "./pages/connexion";
+import {Candidature} from "./pages/mes_candidatures";
+import {Connexion} from "./pages/connexion";
+import {Popup} from "./component/popup_candidature";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Candidature />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,64 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f7;
+    height: 200px;
+    min-width: 450px;
+    margin: 15px 50px 15px 0;
+    cursor: pointer;
+}
+
+.left-part {
+    width: 100%;
+    height: auto;
+}
+
+.left-part img {
+    margin-top: 20px;
+    width: auto;
+    height: 80%;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 60%;
+}
+
+.logo div img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.logo div {
+    width: 30%;
+}
+
+.right-part {
+    color: #23b2a4;
+}
+
+.right-part div {
+    margin-top: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+@media screen and (max-width: 730px) {
+
+    .card {
+        min-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
