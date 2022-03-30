@@ -12,7 +12,7 @@ function Card(props) {
     const [openModal, setOpenModal] = useState(false)
 
     return (
-        <div className="card shadow" onClick={() => {
+        <div className="card-candidate shadow" onClick={() => {
             setOpenModal(true)
         }}>
             <div className="left-part">
@@ -46,7 +46,7 @@ export class Candidature extends Component {
         return (
             <div>
                 <Menu /*active="Candidature"*/ menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
-                <div className="container">
+                <div className="contain">
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>

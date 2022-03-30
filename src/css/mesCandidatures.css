@@ -1,4 +1,4 @@
-.card {
+.card-candidate {
     display: flex;
     flex-direction: row;
     background-color: #f7f7f7;
@@ -47,7 +47,7 @@
     margin-top: 15px;
 }
 
-.container {
+.contain {
     /*display: flex;*/
     /*flex-direction: row;*/
     /*flex-wrap: wrap;*/
@@ -61,12 +61,12 @@
 
 @media screen and (max-width: 1130px) {
 
-    .card {
+    .card-candidate {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .container {
+    .contain {
         width: 80%;
         margin: 50px auto auto;
         display: grid;

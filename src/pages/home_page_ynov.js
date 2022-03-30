@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import '../css/home_page-ynov.css';
+import '../css/general.css';
 
 
 // TODO

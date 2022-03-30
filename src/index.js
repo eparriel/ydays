@@ -14,7 +14,7 @@ import {Candidater} from "./pages/candidater";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Connexion/>
+      <Candidature/>
   </React.StrictMode>,
   document.getElementById('root')
 );

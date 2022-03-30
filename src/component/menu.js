@@ -13,7 +13,7 @@ export class Menu extends Component {
         return (
             <nav>
                 <ul>
-                    {this.props.menu.map(x => <li><a href= {x.link}>{x.name}</a></li>)}
+                    {this.props.menu.map(x => <li><a href= {x.link.toString()}>{x.name.toString()}</a></li>)}
                 </ul>
 
                 <div className="div-logo">
