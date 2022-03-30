@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import '../css/connexion.css';
+import '../css/general.css'
 import logo from '../assets/logo_ynovcampus/logo_ynov_campus.svg'
 
 const ConnexionArea = () => {
