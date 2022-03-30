@@ -15,7 +15,7 @@ import {DetailOffre} from "./pages/Intervenant/detail_offre";
 
 ReactDOM.render(
   <React.StrictMode>
-      <HomePageYnov_1/>
+      <Connexion />
   </React.StrictMode>,
   document.getElementById('root')
 );

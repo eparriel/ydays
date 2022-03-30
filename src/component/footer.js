@@ -1,6 +1,6 @@
 import '../css/footer.css';
-import logo from '../assets/logo_ynovcampus/logo_ynov_campus.svg'
-import signature from '../assets/signature/apprendre-a-reussir-damion.png'
+import logo from '../assets/logo_ynovcampus/logo_ynov_campus.svg';
+import signature from '../assets/apprendre-a-reussir-damion.png';
 
 
 export function Footer() {
