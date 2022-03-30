@@ -1,5 +1,5 @@
 import {Component} from 'react';
-//import '../../css/home_page_intervenant.css';
+import '../../css/home_page_intervenant.css';
 
 
 // TODO
@@ -20,7 +20,6 @@ class Card extends Component {
 
                 </div>
                 <div className="body-card"> 
-                    <div><h4>{this.props.situation}</h4></div>
                     <div><h4>{this.props.duration}</h4></div>
                     <div><h4>{this.props.description}</h4></div>
                     <div><h4>{this.props.contract}</h4></div>
@@ -43,11 +42,11 @@ export class HomePageIntervenant extends Component {
         return (
             
                 <div className="container">
-                    <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
-                    <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
-                    <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
-                    <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
-                    
+                    <Card  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION RAPIDE" btn="DETAILS"/>
+                    <Card  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION RAPIDE" btn="DETAILS"/>
+                    <Card  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION RAPIDE" btn="DETAILS"/>
+                    <Card  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION RAPIDE" btn="DETAILS"/>
+                    <div className="frise"></div>
                 </div>
                   
         )
