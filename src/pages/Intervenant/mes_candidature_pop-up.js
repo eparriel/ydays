@@ -8,8 +8,8 @@ function MesCandidature_detail(props) {
            <div className="card shadow">
                     <div className="header-card">
                         <div><img className="profil-pic" src={props.pictureLink} alt="pdp"/></div>              
-                        <div> <h3 className="firstname">{props.firstname}</h3> </div>
-                        <div> <h3 className="surname">{props.surname}</h3> </div>
+                        <div> <h3 className="firstname">{props.firstname + " "}</h3> </div>
+                        <div> <h3 className="surname">{props.surname.toString() + " "}</h3> </div>
                         <div> <h3 className="age">{props.age}</h3> </div>
                         <div> <h3 className="offer_name">Candidature au poste de : {props.offer_name}</h3> </div>
                     </div>

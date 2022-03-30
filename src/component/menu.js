@@ -9,6 +9,11 @@ export function Menu(props) {
 
     const [toggleMenu, setToggleMenu] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
+    const [openModal, setOpenModal] = useState(false);
+
+    const changeModal = () => {
+        setOpenModal(!openModal);
+    }
 
     const toggleNavSmallScreen = () => {
         setToggleMenu(!toggleMenu);
@@ -47,12 +52,12 @@ export function Menu(props) {
                 </div>
 
 
-                {props.menu.map(x => <li><a href= {x.link.toString()}>{x.name.toString()}</a></li>)}
+                {props.menu.map(x => <li><a href={x.link.toString()} onClick={x.name.toString() === "CANDIDATER" ? changeModal : ""} >{x.name.toString()}</a></li>)}
             </ul>}
 
             {width > 1130 && toggleMenu === false &&
             <ul>
-                {props.menu.map(x => <li><a href= {x.link.toString()}>{x.name.toString()}</a></li>)}
+                {props.menu.map(x => <li><a href={x.link.toString()} >{x.name.toString()}</a></li>)}
             </ul>}
 
             <div className="div-logo">

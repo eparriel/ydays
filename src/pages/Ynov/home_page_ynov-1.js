@@ -7,7 +7,7 @@ import '../../css/home_page_ynov-1.css';
 import '../../css/general.css'
 import message from '../../assets/message.png';
 import discuss from '../../assets/discuss.png';
-import {Connexion} from "../connexion";
+import {Candidature_detail} from "./candidature_pop-up_2";
 
 
 function Card(props) {
@@ -43,7 +43,7 @@ function Card(props) {
                     </div>
                 </div>
             </div>
-            { openModal && <Popup contain={<Connexion />} closeModal={changeModal} />}
+            { openModal && <Popup contain={<Candidature_detail pictureLink="https://thispersondoesnotexist.com/image" surname="Nom" firstname="Prénom" age="Âge" situation="SITUATION PROFFESSIONNELLE" competence="COMPÉTENCES" description="DESCRIPTION DU POSTE" motivation="MOTIVATION DÉTAILLÉE" />} closeModal={changeModal} />}
         </div>
 
     )

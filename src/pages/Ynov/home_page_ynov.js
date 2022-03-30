@@ -1,33 +1,41 @@
-import {Component} from 'react';
+import {Component, useState} from 'react';
 import '../../css/home_page-ynov.css';
+import {Popup} from "../../component/popup_candidature";
+import {Candidature_detail} from "./candidature_pop-up_2";
 
 
 // TODO
-class Card extends Component {
-    constructor(props) {
-        super(props);
+function Card(props) {
+
+    const [openModal, setOpenModal] = useState(false);
+
+    const changeModal = () => {
+        setOpenModal(!openModal);
     }
 
-    render() {
-        return (
-            <a href={this.props.profilurl}><div className="card shadow">
+    return (
+        <div>
+            <a href={props.profilurl}><div className="card shadow" onClick={changeModal}>
                 <div className="header-card">
-                    <div><img className="profil-pic" src={this.props.pictureLink} alt="pdp"/></div>
+                    <div><img className="profil-pic" src={props.pictureLink} alt="pdp"/></div>
                     <div>
-                        <h3 className="name">{this.props.name}</h3>
+                        <h3 className="name">{props.name}</h3>
                     </div>
                 </div>
                 <div className="border">
 
                 </div>
                 <div className="body-card">
-                    <div><h4>{this.props.situation}</h4></div>
-                    <div><h4>{this.props.motivation}</h4></div>
-                    <div><h4>{this.props.description}</h4></div>
+                    <div><h4>{props.situation}</h4></div>
+                    <div><h4>{props.motivation}</h4></div>
+                    <div><h4>{props.description}</h4></div>
                 </div>
             </div></a>
-        )
-    }
+            { openModal && <Popup contain={<Candidature_detail pictureLink="https://thispersondoesnotexist.com/image" surname="Nom" firstname="Prénom" age="Âge" situation="SITUATION PROFFESSIONNELLE" competence="COMPÉTENCES" description="DESCRIPTION DU POSTE" motivation="MOTIVATION DÉTAILLÉE" />} closeModal={changeModal} />}
+
+        </div>
+
+    )
 }
 
 
