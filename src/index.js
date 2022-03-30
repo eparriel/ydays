@@ -12,11 +12,14 @@ import {HomePageIntervenant} from "./pages/Intervenant/home_page_intervenant";
 import {PosterOffre} from "./pages/Ynov/poster_offre";
 import {Candidater} from "./pages/Intervenant/candidater";
 import {DetailOffre} from "./pages/Intervenant/detail_offre";
+import {MesCandidature} from "./pages/Intervenant/mes_candidature";
+import {MesCandidature_pop_up} from "./pages/Intervenant/mes_candidature_pop-up";
+import {Candidature_pop_up} from "./pages/Ynov/candidature_pop-up_2";
 
 
 ReactDOM.render(
   <React.StrictMode>
-      <DetailOffre/>
+      <MesCandidature_pop_up/>
   </React.StrictMode>,
   document.getElementById('root')
 );
