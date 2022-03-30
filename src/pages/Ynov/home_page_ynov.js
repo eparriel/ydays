@@ -2,6 +2,8 @@ import {Component, useState} from 'react';
 import '../../css/home_page-ynov.css';
 import {Popup} from "../../component/popup_candidature";
 import {Candidature_detail} from "./candidature_pop-up_2";
+import {Menu} from "../../component/menu";
+import {Footer} from "../../component/footer"
 
 
 // TODO
@@ -15,7 +17,7 @@ function Card(props) {
 
     return (
         <div>
-            <a href={props.profilurl}><div className="card shadow" onClick={changeModal}>
+                <div className="card-home shadow" onClick={changeModal}>
                 <div className="header-card">
                     <div><img className="profil-pic" src={props.pictureLink} alt="pdp"/></div>
                     <div>
@@ -26,11 +28,11 @@ function Card(props) {
 
                 </div>
                 <div className="body-card">
-                    <div><h4>{props.situation}</h4></div>
-                    <div><h4>{props.motivation}</h4></div>
-                    <div><h4>{props.description}</h4></div>
+                    <div><p>{props.situation}</p></div><br/>
+                    <div><p>{props.motivation}</p></div><br/>
+                    <div><p>{props.description}</p></div><br/>
                 </div>
-            </div></a>
+            </div>
             { openModal && <Popup contain={<Candidature_detail pictureLink="https://thispersondoesnotexist.com/image" surname="Nom" firstname="Prénom" age="Âge" situation="SITUATION PROFFESSIONNELLE" competence="COMPÉTENCES" description="DESCRIPTION DU POSTE" motivation="MOTIVATION DÉTAILLÉE" />} closeModal={changeModal} />}
 
         </div>
@@ -46,12 +48,19 @@ export class HomePageYnov extends Component {
 
     render() {
         return (
-            <div className="container">
-                <Card profilurl="#" pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
-                <Card profilurl="#" pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
-                <Card profilurl="#" pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
-                <Card profilurl="#" pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
+            <div>
+
+                <div className="frise">
+
+                </div>
+                <div className="body-home">
+                    <Card pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
+                    <Card pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
+                    <Card pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
+                    <Card pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
+                </div>
             </div>
+
         )
     }
 }
