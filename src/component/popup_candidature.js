@@ -1,18 +1,20 @@
-import {Component} from 'react';
-import '../css/popup.css'
-import '../css/general.css'
+import '../css/popup.css';
+import '../css/general.css';
+import close from '../assets/close.png';
 
-export function Popup( {closeModal}) {
+export function Popup( props) {
     return (
         <div>
-            <div className="background-popup" onClick={() => closeModal(false)}>
+            <div className="background-popup">
+                <div className="popup shadow">
 
-            </div>
-            <div className="popup shadow">
-                <h1>Test</h1>
-                <button onClick={() => closeModal(false)}>close</button>
+                    <button className="closeModalBtn" onClick={() => props.closeModal}>
+                        <img src={close} alt="close button"/>
+                    </button>
 
+                </div>
             </div>
+
         </div>
 
     )

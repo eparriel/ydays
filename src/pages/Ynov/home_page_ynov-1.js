@@ -10,12 +10,15 @@ import discuss from '../../assets/discuss.png';
 
 
 function Card(props) {
-    const [openModal, setOpenModal] = useState(false)
+
+    const [openModal, setOpenModal] = useState(false);
+
+    const changeModal = () => {
+        setOpenModal(!openModal);
+    }
 
     return (
-        <div className="card-candidate shadow" onClick={() => {
-            setOpenModal(true)
-        }}>
+        <div className="card-candidate shadow" onClick={changeModal}>
             <div className="left-part">
                 <img src={props.pdp} alt="profil"/>
             </div>
@@ -37,7 +40,7 @@ function Card(props) {
 
                 </div>
             </div>
-            { openModal && <Popup closeModal={setOpenModal} />}
+            { openModal && <Popup closeModal={changeModal} />}
         </div>
     )
 }
