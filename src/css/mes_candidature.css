@@ -1,19 +1,26 @@
-.container {
-    background-color: #f7f7f7;
-    font-family: 'Red Hat Display', sans-serif;
-    min-height: 100vh;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    display: flex;
-    flex-direction: column;
+.body-candidatures {
+    margin: 50px auto auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
 }
 
-.card {
-    height: 40%;
+.body-card-candidate {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.card-candidature {
+    height: 30%;
     min-height: 300px;
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
 .border {
     border-bottom: 0.1em solid gray;
@@ -23,23 +30,18 @@
 }
 
 .btnArea {
-    text-align: center;
-    height: 50%;
-    color: #23b2a4;
-    font-size: 18px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between
+    height: 20%;
   }
-  
+
   .button {
     background-color: #23b2a4;
     border: none;
-    border-radius: 5px;
-    width: 95%;
-    height: 52px;
+    border-radius: 15px;
+    width: 30%;
+    height: 35px;
     color: white;
     cursor: pointer;
+      margin: auto;
   }
 
   .name {

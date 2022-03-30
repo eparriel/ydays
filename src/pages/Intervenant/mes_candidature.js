@@ -1,28 +1,23 @@
 import {Component} from 'react';
-import '../../css/mes_candidature.css';
 import {Footer} from "../../component/footer";
 import {Menu} from '../../component/menu'
+import '../../css/general.css';
+import '../../css/mes_candidature.css';
 
-class Card extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (         
-                <div className="card shadow"> 
-                    <div className="body-card"> 
-                        <div><h4 className="name">{this.props.name}</h4></div>
-                        <div><h4 className="name">{this.props.type}</h4></div>
-                        <div><h4 className="name">{this.props.duration}</h4></div>
-                        <div><h4 className="name">{this.props.description}</h4></div>
-                    </div>
-                    <div className="btnArea">
-                        <div><button className="button">{this.props.btn}</button></div>
-                    </div>
-                </div>
-        )
-    }
+function Card(props) {
+    return (
+        <div className="card-candidature shadow">
+            <div className="body-card-candidate">
+                <div><p className="name">{props.name}</p></div>
+                <div><p className="name">{props.type}</p></div>
+                <div><p className="name">{props.duration}</p></div>
+                <div><p className="name">{props.description}</p></div>
+            </div>
+            <div className="btnArea">
+                <button className="button">DETAILS</button>
+            </div>
+        </div>
+    )
 }
 
 
@@ -36,7 +31,10 @@ export class MesCandidature extends Component {
             <div>
                 <Menu menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
 
-                <div className="container">
+                <div className="frise">
+
+                </div>
+                <div className="body-candidatures">
                     <Card  name="NOM DU POSTE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
                     <Card  name="NOM DU POSTE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
                     <Card  name="NOM DU POSTE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
