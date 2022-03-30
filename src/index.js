@@ -12,11 +12,11 @@ import {HomePageIntervenant} from "./pages/Intervenant/home_page_intervenant";
 import {PosterOffre} from "./pages/Ynov/poster_offre";
 import {Candidater} from "./pages/Intervenant/candidater";
 import {DetailOffre} from "./pages/Intervenant/detail_offre";
-import {Accueil} from "./pages/page_accueil";
+
 
 ReactDOM.render(
   <React.StrictMode>
-      <HomePageYnov_1 />
+      <DetailOffre/>
   </React.StrictMode>,
   document.getElementById('root')
 );
