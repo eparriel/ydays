@@ -3,7 +3,7 @@
 @import "general.css";
 
 .body-home {
-    margin: auto;
+    margin: 50px auto auto;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

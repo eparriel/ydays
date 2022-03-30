@@ -49,7 +49,7 @@ export class HomePageYnov extends Component {
     render() {
         return (
             <div>
-
+                <Menu menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
                 <div className="frise">
 
                 </div>
@@ -59,6 +59,7 @@ export class HomePageYnov extends Component {
                     <Card pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
                     <Card pictureLink="https://thispersondoesnotexist.com/image" name="Nom Prénom" situation="test" motivation="motivation" description="description" />
                 </div>
+                <Footer />
             </div>
 
         )

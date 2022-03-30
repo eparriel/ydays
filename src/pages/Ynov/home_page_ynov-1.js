@@ -53,7 +53,7 @@ export class HomePageYnov_1 extends Component {
     render() {
         return (
             <div>
-                <Menu /*active="Candidature"*/ menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
+                <Menu menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
                 <div className="contain">
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
