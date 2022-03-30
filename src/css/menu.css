@@ -6,7 +6,6 @@ nav {
     background-color: #ffffff;
     height: 100px;
 }
-
 nav ul {
     display: flex;
     flex-direction: row;
@@ -38,7 +37,51 @@ nav ul li a {
     display: none;
 }
 
+.open-nav-btn {
+    display: none;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.open-nav-btn img {
+    height: 100%;
+    width: 100%;
+}
+
+.close-nav-btn {
+    /*display: none;*/
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #f7f7f7;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-nav-btn img {
+    width: 100%;
+    height:100%;
+}
+
+.logoInMenu {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
 @media screen and (max-width: 1130px) {
+
+    .open-nav-btn {
+        display: block;
+    }
 
     .div-logo {
         margin-top: 5px;
@@ -58,6 +101,14 @@ nav ul li a {
     }
 
     nav ul {
-        display: none;
+        position: fixed;
+        height: 100%;
+        flex-direction: column;
+        background-color: #f7f7f7;
+        left: 0;
+        top: 0;
+        width: 90%;
+        text-align: right;
     }
+
 }
