@@ -1,6 +1,6 @@
 
-import '../css/candidater.css';
-import logo from '../assets/logo_ynovcampus/logo_ynov_campus.svg'
+import '../../css/candidater.css';
+import logo from '../../assets/logo_ynovcampus/logo_ynov_campus.svg'
 
 const CandidaterArea = () => {
     return (

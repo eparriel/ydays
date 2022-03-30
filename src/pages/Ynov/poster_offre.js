@@ -1,6 +1,6 @@
 
-import '../css/poster_offre.css';
-import logo from '../assets/logo_ynovcampus/logo_ynov_campus.svg'
+import '../../css/poster_offre.css';
+import logo from '../../assets/logo_ynovcampus/logo_ynov_campus.svg'
 
 const PosterOffreArea = () => {
     return (

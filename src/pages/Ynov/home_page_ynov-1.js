@@ -1,11 +1,11 @@
 import {Component} from 'react';
-import {Menu} from '../component/menu'
+import {Menu} from '../../component/menu'
 import {useState} from "react";
-import {Popup} from "../component/popup_candidature";
-import '../css/mesCandidatures.css';
-import '../css/general.css'
-import message from '../assets/message.png';
-import discuss from '../assets/discuss.png';
+import {Popup} from "../../component/popup_candidature";
+import '../../css/home_page_ynov-1.css';
+import '../../css/general.css'
+import message from '../../assets/message.png';
+import discuss from '../../assets/discuss.png';
 
 
 function Card(props) {
@@ -76,7 +76,7 @@ function Card(props) {
 //     }
 // }
 
-export class Candidature extends Component {
+export class HomePageYnov_1 extends Component {
     render() {
         return (
             <div className="container">
