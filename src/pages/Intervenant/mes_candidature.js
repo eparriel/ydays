@@ -1,22 +1,35 @@
-import {Component} from 'react';
+import {Component,useState} from 'react';
 import {Footer} from "../../component/footer";
 import {Menu} from '../../component/menu'
 import '../../css/general.css';
 import '../../css/mes_candidature.css';
+import {MesCandidature_detail} from './mes_candidature_pop-up'
+import {Popup} from "../../component/popup_candidature";
 
 function Card(props) {
+
+    const [openModal, setOpenModal] = useState(false);
+
+    const changeModal = () => {
+        setOpenModal(!openModal);
+    }
+
     return (
-        <div className="card-candidature shadow">
-            <div className="body-card-candidate">
-                <div><p className="name">{props.name}</p></div>
-                <div><p className="name">{props.type}</p></div>
-                <div><p className="name">{props.duration}</p></div>
-                <div><p className="name">{props.description}</p></div>
+        <div>
+            <div className="card-candidature shadow">
+                <div className="body-card-candidate">
+                    <div><p className="name">{props.name}</p></div>
+                    <div><p className="name">{props.type}</p></div>
+                    <div><p className="name">{props.duration}</p></div>
+                    <div><p className="name">{props.description}</p></div>
+                </div>
+                <div className="btnArea">
+                    <button className="button" onClick={changeModal}>DETAILS</button>
+                </div>
             </div>
-            <div className="btnArea">
-                <button className="button">DETAILS</button>
-            </div>
+            {openModal && <Popup contain={<MesCandidature_detail pictureLink="https://thispersondoesnotexist.com/image" surname="Nom" firstname="Prénom" age="Âge" offer_name=" " description="DESCRIPTION DU POSTE" situation="SITUATION PROFFESSIONNELLE" motivation="MOTIVATION DÉTAILLÉE" competence="COMPÉTENCES" button="ENREGISTRER"/>} closeModal={changeModal} />}
         </div>
+
     )
 }
 

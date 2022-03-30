@@ -19,7 +19,7 @@ const PosterOffreArea = () => {
                 </div>
 
                 <div className="btnArea">
-                    <div><button className="button">Poster</button></div>
+                    <div><button type="submit" className="button">Poster</button></div>
                 </div>
             </form>
         </div>

@@ -1,8 +1,7 @@
-
 import '../../css/mes_candidature_pop-up.css';
 import '../../css/general.css'
 
-function MesCandidature_detail(props) {
+export function MesCandidature_detail(props) {
     
     return (
            <div className="card shadow">
@@ -28,7 +27,7 @@ function MesCandidature_detail(props) {
 }
 
 //Export
-export function MesCandidature_pop_up(props) {
+ function MesCandidature_pop_up(props) {
         return (
             <div className="candidature_pop_up">
                 <MesCandidature_detail pictureLink="https://thispersondoesnotexist.com/image" surname="Nom" firstname="Prénom" age="Âge" offer_name=" " description="DESCRIPTION DU POSTE" situation="SITUATION PROFFESSIONNELLE" motivation="MOTIVATION DÉTAILLÉE" competence="COMPÉTENCES" button="ENREGISTRER"/>
