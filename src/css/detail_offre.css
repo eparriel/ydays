@@ -1,0 +1,57 @@
+.container {
+    background-color: #f7f7f7;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.border {
+    border-bottom: 0.1em solid gray;
+    height: 0.01rem;
+    width: 90%;
+    margin: 15px 5%;
+}
+
+
+.name {
+    color: #23b2a4;
+    margin-left: 50px;
+}
+
+.offre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+    flex-basis: 33%;
+}
+
+.detail {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    flex-basis: 66%;
+}
+
+.btnArea {
+    text-align: center;
+    height: 50%;
+    color: #23b2a4;
+    font-size: 18px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
+  
+  .button {
+    background-color: #23b2a4;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    height: 52px;
+    color: white;
+    cursor: pointer;
+  }

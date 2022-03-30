@@ -1,15 +1,12 @@
 import {Component} from 'react';
 import '../css/connexion.css';
-import '../css/general.css';
-import logo from '../assets/logo_ynovcampus/logo_ynov_campus.svg';
-import signature from '../assets/signature/apprendre-a-reussir-damion.png';
+import logo from '../assets/logo_ynovcampus/logo_ynov_campus.svg'
 
 const ConnexionArea = () => {
     return (
         <div className="shadow connexionArea">
-            <div className="logo-div">
+            <div className="logo">
                 <img src={logo} alt="Logo Ynov Campus"/>
-                <img src={signature} alt="signature"/>
             </div>
             <form className="formConnexion" action="">
                 <div className="textArea">

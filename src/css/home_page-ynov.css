@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&family=Space+Mono&display=swap');
 
+@import "general.css";
+
 a {
     width: 97%;
     text-decoration: none;

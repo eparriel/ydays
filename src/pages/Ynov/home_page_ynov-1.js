@@ -1,19 +1,19 @@
 import {Component} from 'react';
-import {Menu} from '../component/menu'
-import {Footer} from '../component/footer'
+import {Menu} from '../../component/menu';
+import {Footer} from '../../component/footer';
 import {useState} from "react";
-import {Popup} from "../component/popup_candidature";
-import '../css/mesCandidatures.css';
-import '../css/general.css'
-import message from '../assets/message.png';
-import discuss from '../assets/discuss.png';
+import {Popup} from "../../component/popup_candidature";
+import '../../css/home_page_ynov-1.css';
+import '../../css/general.css';
+import message from '../../assets/message.png';
+import discuss from '../../assets/discuss.png';
 
 
 function Card(props) {
     const [openModal, setOpenModal] = useState(false)
 
     return (
-        <div className="card-candidate shadow" onClick={() => {
+        <div className="card shadow" onClick={() => {
             setOpenModal(true)
         }}>
             <div className="left-part">
@@ -42,20 +42,18 @@ function Card(props) {
     )
 }
 
-export class Candidature extends Component {
+export class HomePageYnov_1 extends Component {
     render() {
         return (
             <div>
-                <Menu /*active="Candidature"*/ menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
-                <div className="contain">
+                <Menu />
+                <div className="container">
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
-                    <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
-                </div>
-
-                <div className="frise">
+                    <div className="frise">
+                    </div>
                 </div>
                 <Footer />
             </div>
