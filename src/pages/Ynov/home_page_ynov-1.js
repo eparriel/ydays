@@ -7,6 +7,7 @@ import '../../css/home_page_ynov-1.css';
 import '../../css/general.css'
 import message from '../../assets/message.png';
 import discuss from '../../assets/discuss.png';
+import {Connexion} from "../connexion";
 
 
 function Card(props) {
@@ -42,7 +43,7 @@ function Card(props) {
                     </div>
                 </div>
             </div>
-            { openModal && <Popup closeModal={changeModal} />}
+            { openModal && <Popup contain={<Connexion />} closeModal={changeModal} />}
         </div>
 
     )

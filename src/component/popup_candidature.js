@@ -12,6 +12,8 @@ export function Popup( props) {
                         <img src={close} alt="close button" onClick={props.closeModal}/>
                     </button>
 
+                    {props.contain}
+
                 </div>
             </div>
 

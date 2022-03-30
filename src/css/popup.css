@@ -10,8 +10,8 @@
 }
 
 .popup {
-    height: 80%;
-    margin: 10% auto auto;
+    height: 80vh;
+    margin: 10vh auto auto;
     width: 70% !important;
     background-color: #fefeff;
     z-index: 999;
@@ -36,6 +36,8 @@
 
 @media screen and (max-width: 730px) {
     .popup {
+        height: 80%;
         width: 90%;
+        margin:10% auto auto;
     }
 }

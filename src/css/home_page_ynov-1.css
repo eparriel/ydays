@@ -1,8 +1,6 @@
 .card-candidate {
-
     height: 200px;
     min-width: 425px;
-    /*margin-top: 50px;*/
 }
 
 .fullspace {
@@ -54,12 +52,8 @@
 }
 
 .contain {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-around;*/
     width: 80%;
-    margin: 50px auto auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
@@ -68,8 +62,7 @@
 @media screen and (max-width: 1130px) {
 
     .card-candidate {
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
     }
 
     .contain {
