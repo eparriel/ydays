@@ -16,7 +16,7 @@ import {Accueil} from "./pages/page_accueil";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Accueil />
+      <HomePageYnov_1 />
   </React.StrictMode>,
   document.getElementById('root')
 );

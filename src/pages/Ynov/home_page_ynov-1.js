@@ -18,30 +18,33 @@ function Card(props) {
     }
 
     return (
-        <div className="card-candidate shadow" onClick={changeModal}>
-            <div className="left-part">
-                <img src={props.pdp} alt="profil"/>
-            </div>
-            <div className="right-part">
-                <div>
-                    <h1>{props.lastName + " " + props.firstName}</h1>
+        <div className="card-candidate shadow">
+            <div className="fullspace" onClick={changeModal}>
+                <div className="left-part">
+                    <img src={props.pdp} alt="profil"/>
                 </div>
-                <div className="logo">
+                <div className="right-part">
                     <div>
-                        <a href="#">
-                            <img src={message} alt="messages"/>
-                        </a>
+                        <h1>{props.lastName + " " + props.firstName}</h1>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src={discuss} alt="discussion"/>
-                        </a>
-                    </div>
+                    <div className="logo">
+                        <div>
+                            <a href="#">
+                                <img src={message} alt="messages"/>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src={discuss} alt="discussion"/>
+                            </a>
+                        </div>
 
+                    </div>
                 </div>
             </div>
             { openModal && <Popup closeModal={changeModal} />}
         </div>
+
     )
 }
 

@@ -8,8 +8,8 @@ export function Popup( props) {
             <div className="background-popup">
                 <div className="popup shadow">
 
-                    <button className="closeModalBtn" onClick={() => props.closeModal}>
-                        <img src={close} alt="close button"/>
+                    <button className="closeModalBtn">
+                        <img src={close} alt="close button" onClick={props.closeModal}/>
                     </button>
 
                 </div>
