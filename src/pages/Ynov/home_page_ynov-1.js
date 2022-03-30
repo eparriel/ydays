@@ -42,7 +42,7 @@ function Card(props) {
     )
 }
 
-export class Candidature extends Component {
+export class HomePageYnov_1 extends Component {
     render() {
         return (
             <div>
