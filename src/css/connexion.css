@@ -1,18 +1,14 @@
-@import "general.css";
 
 * {
   margin: 0;
   padding: 0;
 }
 
-.logo {
-  margin: auto;
+.logo-div {
+  display: flex;
+  flex-direction: column;
   width: 270px;
-  height: 112px;
-}
-
-.logo img {
-  margin: 12px;
+  margin: 15px auto auto;
 }
 
 .connexionArea {

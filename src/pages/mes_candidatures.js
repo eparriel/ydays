@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import {Menu} from '../component/menu'
+import {Footer} from '../component/footer'
 import {useState} from "react";
 import {Popup} from "../component/popup_candidature";
 import '../css/mesCandidatures.css';
@@ -51,10 +52,12 @@ export class Candidature extends Component {
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
+                    <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                 </div>
 
                 <div className="frise">
                 </div>
+                <Footer />
             </div>
         )
     }
