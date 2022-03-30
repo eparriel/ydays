@@ -5,14 +5,14 @@
   padding: 0;
 }
 
-.logo {
+.logo-div {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   width: 270px;
-  height: 112px;
 }
 
-.logo img {
-  margin: 12px;
+.logo-div img {
 }
 
 .connexionArea {

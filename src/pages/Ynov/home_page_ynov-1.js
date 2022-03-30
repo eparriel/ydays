@@ -1,10 +1,10 @@
 import {Component} from 'react';
-import {Menu} from '../../component/menu';
-import {Footer} from '../../component/footer';
+import {Menu} from '../../component/menu'
+import {Footer} from '../../component/footer'
 import {useState} from "react";
 import {Popup} from "../../component/popup_candidature";
 import '../../css/home_page_ynov-1.css';
-import '../../css/general.css';
+import '../../css/general.css'
 import message from '../../assets/message.png';
 import discuss from '../../assets/discuss.png';
 
@@ -13,7 +13,7 @@ function Card(props) {
     const [openModal, setOpenModal] = useState(false)
 
     return (
-        <div className="card shadow" onClick={() => {
+        <div className="card-candidate shadow" onClick={() => {
             setOpenModal(true)
         }}>
             <div className="left-part">
@@ -42,18 +42,20 @@ function Card(props) {
     )
 }
 
-export class HomePageYnov_1 extends Component {
+export class Candidature extends Component {
     render() {
         return (
             <div>
-                <Menu />
-                <div className="container">
+                <Menu /*active="Candidature"*/ menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
+                <div className="contain">
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
-                    <div className="frise">
-                    </div>
+                    <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
+                </div>
+
+                <div className="frise">
                 </div>
                 <Footer />
             </div>
