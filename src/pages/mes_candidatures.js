@@ -41,49 +41,18 @@ function Card(props) {
     )
 }
 
-// class Card extends Component {
-//     constructor(props) {
-//         super(props);
-//
-//     }
-//
-//     render() {
-//         return (
-//             <div className="card shadow">
-//                 <div className="left-part">
-//                     <img src={this.props.pdp} alt="profil"/>
-//                 </div>
-//                 <div className="right-part">
-//                     <div>
-//                         <h1>{this.props.lastName + " " + this.props.firstName}</h1>
-//                     </div>
-//                     <div className="logo">
-//                         <div>
-//                             <a href="#">
-//                                 <img src={message} alt="messages"/>
-//                             </a>
-//                         </div>
-//                         <div>
-//                             <a href="#">
-//                                 <img src={discuss} alt="discussion"/>
-//                             </a>
-//                         </div>
-//
-//                     </div>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
-
 export class Candidature extends Component {
     render() {
         return (
-            <div className="container">
-                <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
-                <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
-                <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
-                <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
+            <div>
+                <Menu /*active="Candidature"*/ menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
+                <div className="container">
+                    <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
+                    <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
+                    <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
+                    <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
+                </div>
+
                 <div className="frise">
                 </div>
             </div>
