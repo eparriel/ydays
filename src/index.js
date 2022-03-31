@@ -19,7 +19,7 @@ import {Candidature_pop_up} from "./pages/Ynov/candidature_pop-up_2";
 
 ReactDOM.render(
   <React.StrictMode>
-      <MesCandidature />
+      <HomePageYnov_1 />
   </React.StrictMode>,
   document.getElementById('root')
 );

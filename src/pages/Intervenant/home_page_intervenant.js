@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import '../../css/home_page_intervenant.css';
-import {Menu} from '../../component/menu'
+import {Menu_Intervenant} from '../../component/menu_intervenant'
 import {Footer} from '../../component/footer'
 
 
@@ -44,7 +44,7 @@ export class HomePageIntervenant extends Component {
     render() {
         return (
                 <div>
-                    <Menu menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
+                    <Menu_Intervenant />
                     <div className="container">
                         <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
                         <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>

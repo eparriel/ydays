@@ -2,7 +2,7 @@
 import '../../css/candidater.css';
 import logo from '../../assets/logo_ynovcampus/logo_ynov_campus.svg'
 
-const CandidaterArea = () => {
+export const CandidaterArea = () => {
     return (
         <div className="shadow CandidaterArea">
             <div className="logo">
@@ -24,7 +24,7 @@ const CandidaterArea = () => {
     )
 }
 
-export function Candidater () {
+function Candidater () {
     return (
         <div>
             <CandidaterArea />

@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import {Menu} from '../../component/menu'
+import {Menu_Ynov} from '../../component/menu'
 import {Footer} from '../../component/footer'
 import {useState} from "react";
 import {Popup} from "../../component/popup_candidature";
@@ -53,7 +53,7 @@ export class HomePageYnov_1 extends Component {
     render() {
         return (
             <div>
-                <Menu menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
+                <Menu_Ynov />
                 <div className="contain">
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>
                     <Card pdp="https://thispersondoesnotexist.com/image" firstName="Prénom" lastName="Nom"/>

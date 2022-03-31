@@ -2,7 +2,7 @@
 import '../../css/poster_offre.css';
 import logo from '../../assets/logo_ynovcampus/logo_ynov_campus.svg'
 
-const PosterOffreArea = () => {
+export const PosterOffreArea = () => {
     return (
         <div className="shadow PosterOffreArea">
             <div className="logo">
@@ -26,7 +26,7 @@ const PosterOffreArea = () => {
     )
 }
 
-export function PosterOffre () {
+function PosterOffre () {
     return (
         <div>
             <PosterOffreArea />

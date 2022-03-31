@@ -1,6 +1,6 @@
 import {Component,useState} from 'react';
 import {Footer} from "../../component/footer";
-import {Menu} from '../../component/menu'
+import {Menu_Intervenant} from '../../component/menu_intervenant';
 import '../../css/general.css';
 import '../../css/mes_candidature.css';
 import {MesCandidature_detail} from './mes_candidature_pop-up'
@@ -42,7 +42,7 @@ export class MesCandidature extends Component {
     render() {
         return (
             <div>
-                <Menu menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
+                <Menu_Intervenant />
 
                 <div className="frise">
 

@@ -2,7 +2,7 @@ import {Component, useState} from 'react';
 import '../../css/home_page-ynov.css';
 import {Popup} from "../../component/popup_candidature";
 import {Candidature_detail} from "./candidature_pop-up_2";
-import {Menu} from "../../component/menu";
+import {Menu_Ynov} from "../../component/menu";
 import {Footer} from "../../component/footer"
 
 
@@ -49,7 +49,7 @@ export class HomePageYnov extends Component {
     render() {
         return (
             <div>
-                <Menu menu={[{link: "#", name: "HOME PAGE"}, {link: "#", name: "CANDIDATURES ENREGISTRÉES"}, {link: "#", name: "POSTER UNE OFFRE"}, {link: "#", name: "TCHATER"}]} />
+                <Menu_Ynov />
                 <div className="frise">
 
                 </div>
