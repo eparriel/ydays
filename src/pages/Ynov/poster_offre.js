@@ -1,37 +1,24 @@
 
 import '../../css/poster_offre.css';
-import logo from '../../assets/logo_ynovcampus/logo_ynov_campus.svg'
+import '../../css/general.css';
 
 export const PosterOffreArea = () => {
     return (
-        <div className="shadow PosterOffreArea">
-            <div className="logo">
-                <img src={logo} alt="Logo Ynov Campus"/>
-            </div>
+        <div className="PosterOffreArea">
             <div className="header-card">
-                <p>Poster unen Offre d'emploi</p>
+                <p className="posterOffreTitle">Poster une Offre d'emploi</p>
             </div>
-            <form className="formConnexion" action="">
-                <div className="textArea">
-                    <p>Nom de l'offre</p><input id="name" type="text" />
-                    <p>Type de contrat</p><input id="type" type="text" />
-                    <p>Détail de l'offre</p><input id="detail" type="text" />
+            <form className="PostForm" action="">
+                <div className="postOffreArea">
+                    <div><label>Nom de l'offre</label><input id="name" type="text" /></div>
+                    <div><label>Type de contrat</label><input id="type" type="text" /></div>
+                    <div><label>Détail de l'offre</label><input id="detail" type="text" /></div>
                 </div>
 
                 <div className="btnArea">
                     <div><button type="submit" className="button">Poster</button></div>
                 </div>
             </form>
-        </div>
-    )
-}
-
-function PosterOffre () {
-    return (
-        <div>
-            <PosterOffreArea />
-            <div className="frise">
-            </div>
         </div>
     )
 }
