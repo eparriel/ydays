@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-// import {HomePageYnov} from './pages/home_page_ynov';
-// import {Connexion} from "./pages/connexion";
 import {HomePageYnov_1} from "./pages/Ynov/home_page_ynov-1";
 import {Connexion} from "./pages/connexion";
 import {Profile} from "./pages/profile";
@@ -19,7 +17,7 @@ import {Candidature_pop_up} from "./pages/Ynov/candidature_pop-up_2";
 
 ReactDOM.render(
   <React.StrictMode>
-      <HomePageYnov_1 />
+      <Profile />
   </React.StrictMode>,
   document.getElementById('root')
 );

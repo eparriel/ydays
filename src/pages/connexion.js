@@ -17,9 +17,9 @@ const ConnexionArea = () => {
                 </div>
 
                 <div className="btnArea">
-                    <div><button className="button">CONNEXION</button></div>
+                    <div><button className="button-connexion">CONNEXION</button></div>
                     <div><p>ou</p></div>
-                    <div><button className="button">CREER TON COMPTE</button></div>
+                    <div><button className="button-connexion">CREER TON COMPTE</button></div>
 
 
                 </div>
