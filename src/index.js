@@ -9,15 +9,15 @@ import {Popup} from "./component/popup_candidature";
 import {HomePageIntervenant} from "./pages/Intervenant/home_page_intervenant";
 import {PosterOffreArea} from "./pages/Ynov/poster_offre";
 import {CandidaterArea} from "./pages/Intervenant/candidater";
-import {DetailOffre} from "./pages/Intervenant/detail_offre";
+import {Detail_offre} from "./pages/Intervenant/detail_offre";
 import {MesCandidature} from "./pages/Intervenant/mes_candidature";
 import {MesCandidature_detail} from "./pages/Intervenant/mes_candidature_pop-up";
-import {Candidature_pop_up} from "./pages/Ynov/candidature_pop-up_2";
+import {Candidature_detail} from "./pages/Ynov/candidature_pop-up_2";
 
 
 ReactDOM.render(
   <React.StrictMode>
-      <HomePageYnov />
+      <HomePageIntervenant />
   </React.StrictMode>,
   document.getElementById('root')
 );
