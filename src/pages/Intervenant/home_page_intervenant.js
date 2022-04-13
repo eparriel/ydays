@@ -1,38 +1,37 @@
-import {Component} from 'react';
+import {Component, useState} from 'react';
 import '../../css/home_page_intervenant.css';
 import {Menu_Intervenant} from '../../component/menu_intervenant'
 import {Footer} from '../../component/footer'
+import {Popup} from "../../component/popup_candidature";
+import {Detail_offre} from "./detail_offre";
 
+function Card(props) {
 
-// TODO
-class Card extends Component {
-    constructor(props) {
-        super(props);
+    const [openModal, setOpenModal] = useState(false);
+
+    const changeModal = () => {
+        setOpenModal(!openModal);
     }
 
-    render() {
-        return (
-           <div className="card shadow"> 
-                <div className="header-card">
-                    <div>
-                        <h3 className="name">{this.props.name}</h3>
+    return (
+        <div>
+            <div className="card-candidature shadow">
+                <div className="top-body-card-candidate">
+                    <div className="CandidatureHeaderCard"><p className="jobtitle">{props.name}</p></div>
+                    <div className="jobDetails">
+                        <div><p className="JobType">{props.type}</p></div>
+                        <div><p className="JobType">{props.duration}</p></div>
+                        <div><p className="JobType">{props.description}</p></div>
                     </div>
                 </div>
-                <div className="border">
-
-                </div>
-                <div className="body-card"> 
-                    <div><h4>{this.props.situation}</h4></div>
-                    <div><h4>{this.props.duration}</h4></div>
-                    <div><h4>{this.props.description}</h4></div>
-                    <div><h4>{this.props.contract}</h4></div>
-                </div>
                 <div className="btnArea">
-                    <div><button className="button">{this.props.btn}</button></div>
+                    <button className="button-offre" onClick={changeModal}>DETAILS</button>
                 </div>
             </div>
-        )
-    }
+            {openModal && <Popup contain={<Detail_offre OfferName="NOM DE L'OFFRE" type="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION DU POSTE" information="AUTRES INFORMATIONS" button="CANDIDATER"/>} closeModal={changeModal} />}
+        </div>
+
+    )
 }
 
 
@@ -43,17 +42,22 @@ export class HomePageIntervenant extends Component {
 
     render() {
         return (
-                <div>
-                    <Menu_Intervenant />
-                    <div className="container">
-                        <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
-                        <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
-                        <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
-                        <Card profilurl="#"  name="NOM DE L'OFFRE" contract="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION" btn="DETAIL DE L'OFFRE"/>
+            <div>
+                <Menu_Intervenant />
 
-                    </div>
-                    <Footer />
+                <div className="frise">
+
                 </div>
+                <div className="body-candidatures">
+                    <Card  name="NOM DE L'OFFRE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
+                    <Card  name="NOM DU POSTE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
+                    <Card  name="NOM DU POSTE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
+                    <Card  name="NOM DU POSTE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
+                    <Card  name="NOM DU POSTE" type="TYPE DE CONTRAT" description="DESCRIPTION DU POSTE" duration="DURÉE DU CONTRAT" btn="DETAILS"/>
+                </div>
+
+                <Footer />
+            </div>
 
                   
         )

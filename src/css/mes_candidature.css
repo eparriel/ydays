@@ -1,26 +1,16 @@
-.CandidatureHeaderCard {
-    height: 50px;
-    border-bottom: 1px solid dimgray;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
 .body-candidatures {
     margin: 50px auto auto;
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 25px;
 }
 
 .body-card-candidate {
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
 }
 
 .card-candidature {

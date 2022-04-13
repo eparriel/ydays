@@ -4,7 +4,7 @@ import {Menu_Intervenant} from '../../component/menu_intervenant';
 import '../../css/general.css';
 import '../../css/mes_candidature.css';
 import {Popup} from "../../component/popup_candidature";
-import {Detail_offre} from "./detail_offre";
+import {MesCandidature_detail} from "./mes_candidature_pop-up"
 
 function Card(props) {
 
@@ -18,18 +18,17 @@ function Card(props) {
         <div>
             <div className="card-candidature shadow">
                 <div className="body-card-candidate">
-                    <div className="CandidatureHeaderCard"><p className="jobTitle">{props.name}</p></div>
-                    <div className="jobDetails">
-                        <div><p className="JobType">{props.type}</p></div>
-                        <div><p className="JobType">{props.duration}</p></div>
-                        <div><p className="JobType">{props.description}</p></div>
-                    </div>
+                        <div><p className="name">{props.name}</p></div>
+                        <div><p className="name">{props.type}</p></div>
+                        <div><p className="name">{props.duration}</p></div>
+                        <div><p className="name">{props.description}</p></div>
+
                 </div>
                 <div className="btnArea">
-                    <button className="button-offre" onClick={changeModal}>DETAILS</button>
+                    <button className="button" onClick={changeModal}>DETAILS</button>
                 </div>
             </div>
-            {openModal && <Popup contain={<Detail_offre OfferName="NOM DE L'OFFRE" type="TYPE DE CONTRAT" duration="DURÉE DU CONTRAT" description="DESCRIPTION DU POSTE" information="AUTRES INFORMATIONS" button="CANDIDATER"/>} closeModal={changeModal} />}
+            {openModal && <Popup contain={<MesCandidature_detail pictureLink="https://thispersondoesnotexist.com/image" surname="Nom" firstname="Prénom" age="Âge" offer_name=" " description="DESCRIPTION DU POSTE" situation="SITUATION PROFFESSIONNELLE" motivation="MOTIVATION DÉTAILLÉE" competence="COMPÉTENCES" button="ENREGISTRER"/>} closeModal={changeModal} />}
         </div>
 
     )
