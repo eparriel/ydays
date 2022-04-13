@@ -4,11 +4,13 @@ import '../../css/general.css';
 export function Candidature_detail(props) {
     return (
            <div>
-                    <div className="header-card">
-                        <div><img className="profil-pic" src={props.pictureLink} alt="pdp"/></div>              
-                        <div><h3 className="firstname">{props.firstname}</h3></div>
-                        <div><h3 className="surname">{props.surname}</h3></div>
-                        <div><h3 className="age">{props.age}</h3> </div>
+                    <div className="headerCandidate">
+                        <div className="candidatePic"><img className="candidate-pic" src={props.pictureLink} alt="pdp"/></div>
+                        <div className="candidateInfo">
+                            <div><h3 className="firstname">{props.firstname} </h3></div>
+                            <div><h3 className="surname">{props.surname} </h3></div>
+                            <div><h3 className="age">{props.age}</h3> </div>
+                        </div>
                     </div>
                     
                     <div className="detail_candidature">
@@ -21,11 +23,3 @@ export function Candidature_detail(props) {
     )
 }
 
-//Export
-function Candidature_pop_up(props) {
-        return (
-            <div className="candidature_pop_up_2">
-                <Candidature_detail pictureLink="https://thispersondoesnotexist.com/image" surname="Nom" firstname="Prénom" age="Âge" situation="SITUATION PROFFESSIONNELLE" competence="COMPÉTENCES" description="DESCRIPTION DU POSTE" motivation="MOTIVATION DÉTAILLÉE"/>
-            </div>
-        )
-}

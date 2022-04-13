@@ -18,7 +18,7 @@ function Card(props) {
     return (
         <div>
                 <div className="card-home shadow" onClick={changeModal}>
-                <div className="header-card">
+                <div className="top-card">
                     <div><img className="profil-pic" src={props.pictureLink} alt="pdp"/></div>
                     <div>
                         <h3 className="name">{props.name}</h3>
